@@ -6,7 +6,7 @@ import org.openqa.selenium.WebDriver;
 
 public class CucumberHooks {
 
-    private WebDriver driver;
+    protected WebDriver driver;
 
     @Before
     public void initDriver() throws Exception {
