@@ -5,7 +5,7 @@ import com.constant.ConfigConst;
 import java.io.FileInputStream;
 import java.util.Properties;
 
-public class TestUtils {
+public class TestUtil {
 
 
     public static String getValueFromPropertiesFile(ConfigConst key) {

@@ -26,12 +26,15 @@ public class DriverFactory {
             case "chrome":
                 WebDriverManager.chromedriver().setup();
                 thrlcDriver.set(new ChromeDriver());
+                break;
             case "firefox":
                 WebDriverManager.firefoxdriver().setup();
                 thrlcDriver.set(new FirefoxDriver());
+                break;
             case "edge":
                 WebDriverManager.edgedriver().setup();
                 thrlcDriver.set(new EdgeDriver());
+                break;
             default:
                 throw new Exception("ERROR: " + browser + " is not supported.");
         }
