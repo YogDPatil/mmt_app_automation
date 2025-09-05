@@ -7,9 +7,12 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 
+@Listeners(com.listeners.UiListeners.class)
 public final class LoginPageStepDef {
     private LoginPage loginPage = new LoginPage(DriverFactory.getDriver());
+
     @Given("user is on login page")
     public void user_is_on_login_page() {
         DriverFactory.getDriver().get(TestUtil.getValueFromPropertiesFile(ConfigConst.BASE_URL));
